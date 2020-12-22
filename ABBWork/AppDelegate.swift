@@ -7,14 +7,20 @@
 
 import UIKit
 import CoreData
+import SDWebImageSwiftUI
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // caching thumb images
+        let cache = SDImageCache(namespace: "tinyimage")
+        cache.config.maxMemoryCost = 100 * 1024 * 1024 // 100MB memory
+        cache.config.maxDiskSize = 100 * 1024 * 1024 // 100MB disk
+        SDImageCachesManager.shared.addCache(cache)
+        SDWebImageManager.defaultImageCache = SDImageCachesManager.shared
+        
         return true
     }
 

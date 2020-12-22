@@ -3,29 +3,79 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70521EC71B6AA261007B4C1E /* Pods_ABBWorkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32E5838990789B88F1128AC6 /* Pods_ABBWorkTests.framework */; };
+		859BA58CAD10A634A9A672B5 /* Pods_ABBWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7DFEC1F0D7CB8D1520EBF37 /* Pods_ABBWork.framework */; };
 		9B5FB4D925914179008E9901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5FB4D825914179008E9901 /* AppDelegate.swift */; };
 		9B5FB4DB25914179008E9901 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5FB4DA25914179008E9901 /* SceneDelegate.swift */; };
-		9B5FB4DD25914179008E9901 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5FB4DC25914179008E9901 /* ContentView.swift */; };
+		9B5FB4DD25914179008E9901 /* MainEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5FB4DC25914179008E9901 /* MainEntryView.swift */; };
 		9B5FB4E025914179008E9901 /* ABBWork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B5FB4DE25914179008E9901 /* ABBWork.xcdatamodeld */; };
 		9B5FB4E22591417B008E9901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B5FB4E12591417B008E9901 /* Assets.xcassets */; };
 		9B5FB4E52591417B008E9901 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B5FB4E42591417B008E9901 /* Preview Assets.xcassets */; };
 		9B5FB4E82591417B008E9901 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5FB4E62591417B008E9901 /* LaunchScreen.storyboard */; };
+		9BADF7FD25914FA400485401 /* PodcastDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF7FC25914FA400485401 /* PodcastDataModel.swift */; };
+		9BADF8012591537F00485401 /* PodcastListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF8002591537F00485401 /* PodcastListDataModel.swift */; };
+		9BADF807259154EF00485401 /* NetworkRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF806259154EF00485401 /* NetworkRequestError.swift */; };
+		9BADF80B2591565700485401 /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF80A2591565700485401 /* NetworkAPI.swift */; };
+		9BADF80F25915A1600485401 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF80E25915A1600485401 /* NetworkService.swift */; };
+		9BADF81325915DD500485401 /* PodcastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF81225915DD500485401 /* PodcastViewModel.swift */; };
+		9BADF81725915F5700485401 /* PodcastListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF81625915F5600485401 /* PodcastListViewModel.swift */; };
+		9BADF81B25916BF300485401 /* PodcastCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF81A25916BF300485401 /* PodcastCellView.swift */; };
+		9BADF81F259173F700485401 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF81E259173F700485401 /* SearchBarView.swift */; };
+		9BADF824259177C800485401 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF823259177C800485401 /* Extensions.swift */; };
+		9BADF82A259177F200485401 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF829259177F200485401 /* ViewModifiers.swift */; };
+		9BADF83C2591AE7A00485401 /* MockNetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF83B2591AE7A00485401 /* MockNetworkServiceTests.swift */; };
+		9BADF8402591AF3E00485401 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF83F2591AF3E00485401 /* MockNetworkService.swift */; };
+		9BADF84F2592977F00485401 /* CoreDataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF84E2592977F00485401 /* CoreDataCache.swift */; };
+		9BBB3A92259142B4005BE64F /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBB3A91259142B4005BE64F /* NetworkServiceTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9BBB3A94259142B4005BE64F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B5FB4CD25914179008E9901 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B5FB4D425914179008E9901;
+			remoteInfo = ABBWork;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		32E5838990789B88F1128AC6 /* Pods_ABBWorkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABBWorkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5FB4D525914179008E9901 /* ABBWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABBWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5FB4D825914179008E9901 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B5FB4DA25914179008E9901 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9B5FB4DC25914179008E9901 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9B5FB4DC25914179008E9901 /* MainEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainEntryView.swift; sourceTree = "<group>"; };
 		9B5FB4DF25914179008E9901 /* ABBWork.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ABBWork.xcdatamodel; sourceTree = "<group>"; };
 		9B5FB4E12591417B008E9901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B5FB4E42591417B008E9901 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9B5FB4E72591417B008E9901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B5FB4E92591417B008E9901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BADF7FC25914FA400485401 /* PodcastDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDataModel.swift; sourceTree = "<group>"; };
+		9BADF8002591537F00485401 /* PodcastListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListDataModel.swift; sourceTree = "<group>"; };
+		9BADF806259154EF00485401 /* NetworkRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestError.swift; sourceTree = "<group>"; };
+		9BADF80A2591565700485401 /* NetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAPI.swift; sourceTree = "<group>"; };
+		9BADF80E25915A1600485401 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9BADF81225915DD500485401 /* PodcastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewModel.swift; sourceTree = "<group>"; };
+		9BADF81625915F5600485401 /* PodcastListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListViewModel.swift; sourceTree = "<group>"; };
+		9BADF81A25916BF300485401 /* PodcastCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCellView.swift; sourceTree = "<group>"; };
+		9BADF81E259173F700485401 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		9BADF823259177C800485401 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9BADF829259177F200485401 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		9BADF83B2591AE7A00485401 /* MockNetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkServiceTests.swift; sourceTree = "<group>"; };
+		9BADF83F2591AF3E00485401 /* MockNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkService.swift; sourceTree = "<group>"; };
+		9BADF84E2592977F00485401 /* CoreDataCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataCache.swift; sourceTree = "<group>"; };
+		9BBB3A8F259142B4005BE64F /* ABBWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABBWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BBB3A91259142B4005BE64F /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		9BBB3A93259142B4005BE64F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2B0D2FA8317335FDD133A27 /* Pods-ABBWorkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABBWorkTests.release.xcconfig"; path = "Target Support Files/Pods-ABBWorkTests/Pods-ABBWorkTests.release.xcconfig"; sourceTree = "<group>"; };
+		B1E7AD32A6A2546FEBEF8E38 /* Pods-ABBWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABBWork.release.xcconfig"; path = "Target Support Files/Pods-ABBWork/Pods-ABBWork.release.xcconfig"; sourceTree = "<group>"; };
+		B7306F4B3E93D9DDF5CACE7C /* Pods-ABBWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABBWork.debug.xcconfig"; path = "Target Support Files/Pods-ABBWork/Pods-ABBWork.debug.xcconfig"; sourceTree = "<group>"; };
+		C7DFEC1F0D7CB8D1520EBF37 /* Pods_ABBWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABBWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA56C0694B1187B1ECBE0F4A /* Pods-ABBWorkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABBWorkTests.debug.xcconfig"; path = "Target Support Files/Pods-ABBWorkTests/Pods-ABBWorkTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +83,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				859BA58CAD10A634A9A672B5 /* Pods_ABBWork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BBB3A8C259142B4005BE64F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70521EC71B6AA261007B4C1E /* Pods_ABBWorkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33501D374015C0B6E10E68CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7306F4B3E93D9DDF5CACE7C /* Pods-ABBWork.debug.xcconfig */,
+				B1E7AD32A6A2546FEBEF8E38 /* Pods-ABBWork.release.xcconfig */,
+				DA56C0694B1187B1ECBE0F4A /* Pods-ABBWorkTests.debug.xcconfig */,
+				A2B0D2FA8317335FDD133A27 /* Pods-ABBWorkTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		965710F15BDF4329A8963904 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7DFEC1F0D7CB8D1520EBF37 /* Pods_ABBWork.framework */,
+				32E5838990789B88F1128AC6 /* Pods_ABBWorkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9B5FB4CC25914179008E9901 = {
 			isa = PBXGroup;
 			children = (
 				9B5FB4D725914179008E9901 /* ABBWork */,
+				9BBB3A90259142B4005BE64F /* ABBWorkTests */,
 				9B5FB4D625914179008E9901 /* Products */,
+				33501D374015C0B6E10E68CD /* Pods */,
+				965710F15BDF4329A8963904 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				9B5FB4D525914179008E9901 /* ABBWork.app */,
+				9BBB3A8F259142B4005BE64F /* ABBWorkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,11 +143,13 @@
 			children = (
 				9B5FB4D825914179008E9901 /* AppDelegate.swift */,
 				9B5FB4DA25914179008E9901 /* SceneDelegate.swift */,
-				9B5FB4DC25914179008E9901 /* ContentView.swift */,
-				9B5FB4E12591417B008E9901 /* Assets.xcassets */,
-				9B5FB4E62591417B008E9901 /* LaunchScreen.storyboard */,
-				9B5FB4E92591417B008E9901 /* Info.plist */,
-				9B5FB4DE25914179008E9901 /* ABBWork.xcdatamodeld */,
+				9B94FACE259145920070E67B /* Views */,
+				9B94FACD259145670070E67B /* View Models */,
+				9BADF85425929D4700485401 /* CoreDataCache */,
+				9B94FACC259145480070E67B /* Data Models */,
+				9B94FACB259144EC0070E67B /* Network Services */,
+				9BADF8222591776D00485401 /* Helpers */,
+				9B94FACA259144980070E67B /* Supporting Files */,
 				9B5FB4E32591417B008E9901 /* Preview Content */,
 			);
 			path = ABBWork;
@@ -78,6 +163,83 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		9B94FACA259144980070E67B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B5FB4E12591417B008E9901 /* Assets.xcassets */,
+				9B5FB4E62591417B008E9901 /* LaunchScreen.storyboard */,
+				9B5FB4E92591417B008E9901 /* Info.plist */,
+				9B5FB4DE25914179008E9901 /* ABBWork.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9B94FACB259144EC0070E67B /* Network Services */ = {
+			isa = PBXGroup;
+			children = (
+				9BADF80A2591565700485401 /* NetworkAPI.swift */,
+				9BADF80E25915A1600485401 /* NetworkService.swift */,
+				9BADF83F2591AF3E00485401 /* MockNetworkService.swift */,
+			);
+			path = "Network Services";
+			sourceTree = "<group>";
+		};
+		9B94FACC259145480070E67B /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				9BADF7FC25914FA400485401 /* PodcastDataModel.swift */,
+				9BADF8002591537F00485401 /* PodcastListDataModel.swift */,
+				9BADF806259154EF00485401 /* NetworkRequestError.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		9B94FACD259145670070E67B /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				9BADF81225915DD500485401 /* PodcastViewModel.swift */,
+				9BADF81625915F5600485401 /* PodcastListViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		9B94FACE259145920070E67B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B5FB4DC25914179008E9901 /* MainEntryView.swift */,
+				9BADF81A25916BF300485401 /* PodcastCellView.swift */,
+				9BADF81E259173F700485401 /* SearchBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9BADF8222591776D00485401 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9BADF823259177C800485401 /* Extensions.swift */,
+				9BADF829259177F200485401 /* ViewModifiers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9BADF85425929D4700485401 /* CoreDataCache */ = {
+			isa = PBXGroup;
+			children = (
+				9BADF84E2592977F00485401 /* CoreDataCache.swift */,
+			);
+			path = CoreDataCache;
+			sourceTree = "<group>";
+		};
+		9BBB3A90259142B4005BE64F /* ABBWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BBB3A91259142B4005BE64F /* NetworkServiceTests.swift */,
+				9BADF83B2591AE7A00485401 /* MockNetworkServiceTests.swift */,
+				9BBB3A93259142B4005BE64F /* Info.plist */,
+			);
+			path = ABBWorkTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B5FB4EC2591417B008E9901 /* Build configuration list for PBXNativeTarget "ABBWork" */;
 			buildPhases = (
+				634000FD1FA5C8B68F1EB65D /* [CP] Check Pods Manifest.lock */,
 				9B5FB4D125914179008E9901 /* Sources */,
 				9B5FB4D225914179008E9901 /* Frameworks */,
 				9B5FB4D325914179008E9901 /* Resources */,
+				FC973B47E4FD40489F066571 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -97,6 +261,25 @@
 			productName = ABBWork;
 			productReference = 9B5FB4D525914179008E9901 /* ABBWork.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9BBB3A8E259142B4005BE64F /* ABBWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BBB3A98259142B4005BE64F /* Build configuration list for PBXNativeTarget "ABBWorkTests" */;
+			buildPhases = (
+				1103F7BE597321F1BB6EF65C /* [CP] Check Pods Manifest.lock */,
+				9BBB3A8B259142B4005BE64F /* Sources */,
+				9BBB3A8C259142B4005BE64F /* Frameworks */,
+				9BBB3A8D259142B4005BE64F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BBB3A95259142B4005BE64F /* PBXTargetDependency */,
+			);
+			name = ABBWorkTests;
+			productName = ABBWorkTests;
+			productReference = 9BBB3A8F259142B4005BE64F /* ABBWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -109,6 +292,10 @@
 				TargetAttributes = {
 					9B5FB4D425914179008E9901 = {
 						CreatedOnToolsVersion = 12.1;
+					};
+					9BBB3A8E259142B4005BE64F = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 9B5FB4D425914179008E9901;
 					};
 				};
 			};
@@ -126,6 +313,7 @@
 			projectRoot = "";
 			targets = (
 				9B5FB4D425914179008E9901 /* ABBWork */,
+				9BBB3A8E259142B4005BE64F /* ABBWorkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -141,21 +329,122 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BBB3A8D259142B4005BE64F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1103F7BE597321F1BB6EF65C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ABBWorkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		634000FD1FA5C8B68F1EB65D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ABBWork-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC973B47E4FD40489F066571 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ABBWork/Pods-ABBWork-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ABBWork/Pods-ABBWork-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ABBWork/Pods-ABBWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9B5FB4D125914179008E9901 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BADF82A259177F200485401 /* ViewModifiers.swift in Sources */,
 				9B5FB4E025914179008E9901 /* ABBWork.xcdatamodeld in Sources */,
 				9B5FB4D925914179008E9901 /* AppDelegate.swift in Sources */,
+				9BADF8012591537F00485401 /* PodcastListDataModel.swift in Sources */,
 				9B5FB4DB25914179008E9901 /* SceneDelegate.swift in Sources */,
-				9B5FB4DD25914179008E9901 /* ContentView.swift in Sources */,
+				9BADF80F25915A1600485401 /* NetworkService.swift in Sources */,
+				9BADF81B25916BF300485401 /* PodcastCellView.swift in Sources */,
+				9BADF81325915DD500485401 /* PodcastViewModel.swift in Sources */,
+				9BADF8402591AF3E00485401 /* MockNetworkService.swift in Sources */,
+				9BADF807259154EF00485401 /* NetworkRequestError.swift in Sources */,
+				9B5FB4DD25914179008E9901 /* MainEntryView.swift in Sources */,
+				9BADF81F259173F700485401 /* SearchBarView.swift in Sources */,
+				9BADF81725915F5700485401 /* PodcastListViewModel.swift in Sources */,
+				9BADF7FD25914FA400485401 /* PodcastDataModel.swift in Sources */,
+				9BADF80B2591565700485401 /* NetworkAPI.swift in Sources */,
+				9BADF824259177C800485401 /* Extensions.swift in Sources */,
+				9BADF84F2592977F00485401 /* CoreDataCache.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BBB3A8B259142B4005BE64F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BADF83C2591AE7A00485401 /* MockNetworkServiceTests.swift in Sources */,
+				9BBB3A92259142B4005BE64F /* NetworkServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BBB3A95259142B4005BE64F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B5FB4D425914179008E9901 /* ABBWork */;
+			targetProxy = 9BBB3A94259142B4005BE64F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9B5FB4E62591417B008E9901 /* LaunchScreen.storyboard */ = {
@@ -287,6 +576,7 @@
 		};
 		9B5FB4ED2591417B008E9901 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7306F4B3E93D9DDF5CACE7C /* Pods-ABBWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -308,6 +598,7 @@
 		};
 		9B5FB4EE2591417B008E9901 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1E7AD32A6A2546FEBEF8E38 /* Pods-ABBWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -324,6 +615,48 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9BBB3A96259142B4005BE64F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA56C0694B1187B1ECBE0F4A /* Pods-ABBWorkTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3L9Z83YP6;
+				INFOPLIST_FILE = ABBWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boqiancheng.www.ABBWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ABBWork.app/ABBWork";
+			};
+			name = Debug;
+		};
+		9BBB3A97259142B4005BE64F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2B0D2FA8317335FDD133A27 /* Pods-ABBWorkTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3L9Z83YP6;
+				INFOPLIST_FILE = ABBWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boqiancheng.www.ABBWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ABBWork.app/ABBWork";
 			};
 			name = Release;
 		};
@@ -344,6 +677,15 @@
 			buildConfigurations = (
 				9B5FB4ED2591417B008E9901 /* Debug */,
 				9B5FB4EE2591417B008E9901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BBB3A98259142B4005BE64F /* Build configuration list for PBXNativeTarget "ABBWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BBB3A96259142B4005BE64F /* Debug */,
+				9BBB3A97259142B4005BE64F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
