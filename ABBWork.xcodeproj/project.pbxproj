@@ -16,6 +16,7 @@
 		9B5FB4E22591417B008E9901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B5FB4E12591417B008E9901 /* Assets.xcassets */; };
 		9B5FB4E52591417B008E9901 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B5FB4E42591417B008E9901 /* Preview Assets.xcassets */; };
 		9B5FB4E82591417B008E9901 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B5FB4E62591417B008E9901 /* LaunchScreen.storyboard */; };
+		9BAD26762593C7C300A46B51 /* DataCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD26752593C7C300A46B51 /* DataCenter.swift */; };
 		9BADF7FD25914FA400485401 /* PodcastDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF7FC25914FA400485401 /* PodcastDataModel.swift */; };
 		9BADF8012591537F00485401 /* PodcastListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF8002591537F00485401 /* PodcastListDataModel.swift */; };
 		9BADF807259154EF00485401 /* NetworkRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BADF806259154EF00485401 /* NetworkRequestError.swift */; };
@@ -54,6 +55,7 @@
 		9B5FB4E42591417B008E9901 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9B5FB4E72591417B008E9901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B5FB4E92591417B008E9901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BAD26752593C7C300A46B51 /* DataCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCenter.swift; sourceTree = "<group>"; };
 		9BADF7FC25914FA400485401 /* PodcastDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDataModel.swift; sourceTree = "<group>"; };
 		9BADF8002591537F00485401 /* PodcastListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListDataModel.swift; sourceTree = "<group>"; };
 		9BADF806259154EF00485401 /* NetworkRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestError.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				9B94FACD259145670070E67B /* View Models */,
 				9BADF85425929D4700485401 /* CoreDataCache */,
 				9B94FACC259145480070E67B /* Data Models */,
+				9BAD26742593C32200A46B51 /* Data Center */,
 				9B94FACB259144EC0070E67B /* Network Services */,
 				9BADF8222591776D00485401 /* Helpers */,
 				9B94FACA259144980070E67B /* Supporting Files */,
@@ -211,6 +214,14 @@
 				9BADF81E259173F700485401 /* SearchBarView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		9BAD26742593C32200A46B51 /* Data Center */ = {
+			isa = PBXGroup;
+			children = (
+				9BAD26752593C7C300A46B51 /* DataCenter.swift */,
+			);
+			path = "Data Center";
 			sourceTree = "<group>";
 		};
 		9BADF8222591776D00485401 /* Helpers */ = {
@@ -407,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BAD26762593C7C300A46B51 /* DataCenter.swift in Sources */,
 				9BADF82A259177F200485401 /* ViewModifiers.swift in Sources */,
 				9B5FB4E025914179008E9901 /* ABBWork.xcdatamodeld in Sources */,
 				9B5FB4D925914179008E9901 /* AppDelegate.swift in Sources */,
