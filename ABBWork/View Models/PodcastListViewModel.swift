@@ -11,6 +11,9 @@ import SwiftUI
 
 class PodcastListViewModel: ObservableObject {
     
+    // for other cases without as binding "term"
+    // @Published var viewLoaded: Bool = false
+    
     @Published var term: String = ""
     @Published var list: [PodcastViewModel] = []
     private var disposables = Set<AnyCancellable>()

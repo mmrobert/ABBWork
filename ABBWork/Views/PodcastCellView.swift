@@ -17,28 +17,40 @@ struct PodcastCellView: View {
     }
     
     var body: some View {
-        HStack {
-            // using third party framework "SDWebImageSwiftUI"
-            // for image loading with buit-in cache
-            WebImage(url: URL(string: podcast.artworkUrl100 ?? ""))
-                .resizable()
-                .placeholder(Image("Appleicon"))
-                .transition(.fade(duration: 0.5))
-                .scaledToFit()
-                // original thumb size should be 100*100
-                .frame(width: 50, height: 50)
-            VStack(alignment: .leading) {
-                Text(podcast.artistName ?? "")
-                    .font(.headline)
-                    .foregroundColor(.primary)
-                Spacer()
-                Text(podcast.collectionName ?? "")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+        NavigationLink(
+            destination: PodcastDetailView(podcast: podcast)) {
+            HStack {
+                // using third party framework "SDWebImageSwiftUI"
+                // for image loading with buit-in cache
+                WebImage(url: URL(string: podcast.artworkUrl100 ?? ""))
+                    .resizable()
+                    .placeholder(Image("Appleicon"))
+                    .transition(.fade(duration: 0.5))
+                    .scaledToFit()
+                    // original thumb size should be 100*100
+                    .frame(width: 50, height: 50)
+                VStack(alignment: .leading) {
+                    Text(podcast.artistName ?? "")
+                        .font(.headline)
+                        .foregroundColor(.primary)
+                    Spacer()
+                    Text(podcast.collectionName ?? "")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
             }
         }
     }
 }
+
+/*
+ if let _ = post.thumbnail_width, let _ = post.thumbnail_height, let urlStr = post.thumbnail, let url = URL(string: urlStr) {
+     // if thumbnail exists
+     AsyncImage(url: url)
+        .frame(width: CGFloat(width), height: CGFloat(height))
+        .scaledToFit()
+ }
+*/
 
 struct PostCell_Previews: PreviewProvider {
     static var previews: some View {
